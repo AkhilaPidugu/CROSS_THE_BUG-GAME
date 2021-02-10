@@ -1,0 +1,13 @@
+body {
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+    color: crimson;
+    font-size: 20px;
+}
+
+.score {
+    margin-left: 200px;
+    font-family: 'Nunito Sans', sans-serif;
+    color: blue;
+    font-size: 20px;
+}
