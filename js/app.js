@@ -49,6 +49,7 @@ var enemy = [60, 145, 230];
 for (var i = 0; i < enemy.length; i++) {
   var enemies = new Enemy(0, enemy[i], 100);
   allEnemies.push(enemies);
+
 }
 
 //Player handleInput() to control the direction
@@ -129,6 +130,8 @@ function levelCount() {
       imagestar = "/images/black_star.jpg";
       titleimg = 'Sorry! You lost the game';
     }
+
+    var hh = "<b>score1</b>";
     swal({
       icon: "success",
       title: titleimg,
