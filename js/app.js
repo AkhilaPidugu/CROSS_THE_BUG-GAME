@@ -94,14 +94,14 @@ var scoreinc = 0;
 function levelCount() {
 
   if (level_count == 2) {
-    player.img = "images/char-pink-girl.png"
+    player.img = "images/char-cat-girl.png"
 
 
   } else if (level_count == 3) {
-    player.img = "images/char-cat-girl.png";
+    player.img = "images/char-horn-girl.png";
 
   } else if (level_count == 4) {
-    player.sprite = "images/char-horn-girl.png"
+    player.img = "images/char-princess-girl.png"
 
   }
   //  else if (level_count == 5) {
