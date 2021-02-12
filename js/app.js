@@ -109,10 +109,31 @@ function levelCount() {
 
   // } 
   else if (level_count == 5) {
+    scoreinc = scoreinc + 100;
+    score.innerHTML = "Score: " + scoreinc;
+    var imagestar = "";
+    var titleimg = "";
+    if (scoreinc >= 450) {
+      imagestar = "/images/Gem_Green.png";
+      titleimg = 'Hurray! You won the game and earned Green Gem';
+    } else if (scoreinc >= 350) {
+      imagestar = "/images/Gem_Blue.png";
+      titleimg = 'Hurray! You won the game and earned Blue Gem';
+    } else if (scoreinc >= 250) {
+      imagestar = "/images/Gem_Orange.png";
+      titleimg = 'Hurray! You won the game and earned Orange Gem';
+    } else if (scoreinc >= 50) {
+      imagestar = "/images/Star.png";
+      titleimg = 'Hurray! You won the game and earned a Gold star';
+    } else {
+      imagestar = "/images/black_star.jpg";
+      titleimg = 'Sorry! You lost the game';
+    }
     swal({
       icon: "success",
-      title: 'Hurray! You won the game',
+      title: titleimg,
       text: "Your Score: " + scoreinc,
+      icon: imagestar,
       button: 'Play Again',
     }).then(function () {
       location.reload();
