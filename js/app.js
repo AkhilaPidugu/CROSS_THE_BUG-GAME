@@ -105,10 +105,7 @@ function levelCount() {
     player.img = "images/char-princess-girl.png"
 
   }
-  //  else if (level_count == 5) {
-  //   player.sprite = "images/char-princess-girl.png";
-
-  // } 
+ 
   else if (level_count == 5) {
     scoreinc = scoreinc + 100;
     score.innerHTML = "Score: " + scoreinc;
@@ -131,7 +128,6 @@ function levelCount() {
       titleimg = 'Sorry! You lost the game';
     }
 
-    var hh = "<b>score1</b>";
     swal({
       icon: "success",
       title: titleimg,
